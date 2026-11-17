@@ -8,8 +8,8 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import { brand } from '../theme/theme';
 
-const LOCATION = 'Sukher, Udaipur, Rajasthan';
-const MAPS_URL = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(LOCATION)}`;
+const LOCATION = 'ONFUGE, 01, Udaipur, Suker, Rajasthan 313001';
+const MAPS_URL = 'https://www.google.com/maps/dir//ONFUGE,+01,+Udaipur,+Suker,+Rajasthan+313001/@24.5891072,73.7050624,14z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3967e5b56a18bdbb:0xb8183207cfa0ba9a!2m2!1d73.7183497!2d24.6496707?hl=en&authuser=0&entry=ttu&g_ep=EgoyMDI2MTExMC4wIKXMDSoASAFQAw%3D%3D';
 
 export default function Footer() {
   return (
@@ -109,7 +109,7 @@ export default function Footer() {
                 <LocationOnIcon sx={{ fontSize: 16, color: brand.orange }} />
                 <span style={{ fontSize: 14 }}>{LOCATION}</span>
               </Stack>
-              <RouterLink to="/about#founder" style={{ color: brand.ink, fontSize: 14, textDecoration: 'none' }}>
+              <RouterLink to="/about" style={{ color: brand.ink, fontSize: 14, textDecoration: 'none' }}>
                 Founder: Prince Dangi
               </RouterLink>
             </Stack>

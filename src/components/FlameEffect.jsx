@@ -7,8 +7,8 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 import RocketLaunchIcon from '@mui/icons-material/RocketLaunch';
 import { brand } from '../theme/theme';
 
-const LOCATION = 'Sukher, Udaipur, Rajasthan';
-const MAPS_URL = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(LOCATION)}`;
+const LOCATION = 'ONFUGE, 01, Udaipur, Suker, Rajasthan 313001';
+const MAPS_URL = 'https://www.google.com/maps/dir//ONFUGE,+01,+Udaipur,+Suker,+Rajasthan+313001/@24.5891072,73.7050624,14z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3967e5b56a18bdbb:0xb8183207cfa0ba9a!2m2!1d73.7183497!2d24.6496707?hl=en&authuser=0&entry=ttu&g_ep=EgoyMDI2MTExMC4wIKXMDSoASAFQAw%3D%3D';
 
 const BUDGETS = ['Under ₹25,000', '₹25,000 – ₹75,000', '₹75,000 – ₹2,00,000', '₹2,00,000+'];
 
