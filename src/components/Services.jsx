@@ -14,7 +14,7 @@ export default function Hero() {
         minHeight: '100vh',
         display: 'flex',
         alignItems: 'center',
-        pt: { xs: 14, md: 0 },
+        pt: { xs: 14, md: 12 },
         overflow: 'hidden',
       }}
     >
@@ -35,7 +35,7 @@ export default function Hero() {
           <Grid item xs={12} md={9}>
             <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
               <Chip
-                label="DIGITAL GROWTH AGENCY"
+                label="DIGITAL MARKETING AGENCY"
                 size="small"
                 sx={{
                   bgcolor: 'rgba(222,103,29,0.12)',

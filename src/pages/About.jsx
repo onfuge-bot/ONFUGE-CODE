@@ -19,7 +19,14 @@ const REASONS = [
  */
 export default function About() {
   return (
-    <Box id="why-us" className="section" sx={{ background: 'linear-gradient(180deg, transparent, rgba(91,95,255,0.05), transparent)' }}>
+    <Box
+      id="why-us"
+      className="section"
+      sx={{
+        pt: { xs: 16, md: 20 },
+        background: 'linear-gradient(180deg, transparent, rgba(91,95,255,0.05), transparent)',
+      }}
+    >
       <Container maxWidth="lg">
         <Box sx={{ textAlign: 'center', mb: 8 }}>
           <Typography variant="overline" sx={{ color: '#A855F7', letterSpacing: 4 }}>
@@ -39,6 +46,50 @@ export default function About() {
             customers, and supporting sustainable business growth.
           </Typography>
         </Box>
+
+        <Grid container spacing={4} alignItems="center" sx={{ mb: 8 }}>
+          <Grid item xs={12} md={5}>
+            <Box className="glass-panel" sx={{ maxWidth: 380, mx: 'auto', p: 1, overflow: 'hidden' }}>
+              <Box
+                component="img"
+                src={`${import.meta.env.BASE_URL}images/founder.jpg`}
+                alt="Prince Dangi, Founder and CEO of ONFUGE"
+                sx={{
+                  display: 'block',
+                  width: '100%',
+                  aspectRatio: '3 / 4',
+                  objectFit: 'cover',
+                  objectPosition: 'center 25%',
+                  borderRadius: 2,
+                }}
+              />
+            </Box>
+          </Grid>
+          <Grid item xs={12} md={7}>
+            <Box className="glass-panel" sx={{ p: { xs: 3, md: 4 } }}>
+              <Typography variant="overline" sx={{ color: '#A855F7', letterSpacing: 4 }}>
+                MEET THE FOUNDER
+              </Typography>
+              <Typography variant="h2" sx={{ fontFamily: '"Space Grotesk"', fontWeight: 700, mt: 1 }}>
+                Prince Dangi
+              </Typography>
+              <Typography sx={{ color: '#00E5FF', fontWeight: 600, mt: 0.5, mb: 2 }}>
+                Founder &amp; CEO
+              </Typography>
+              <Typography sx={{ color: 'rgba(255,255,255,0.7)', lineHeight: 1.7, mb: 2 }}>
+                After completing 12th grade, I was unsure which career path to choose. I believed digital marketing
+                was the future, so I joined FFDL Digital Marketing Institute to learn the field and choose my career.
+              </Typography>
+              <Typography variant="overline" sx={{ color: '#A855F7', letterSpacing: 3 }}>
+                HOW WE BUILD BRANDS
+              </Typography>
+              <Typography sx={{ color: 'rgba(255,255,255,0.7)', lineHeight: 1.7, mt: 1 }}>
+                We start by understanding each business, its audience, and its goals. Then we create a tailored digital
+                marketing strategy, put it into action across the right channels, and refine it using performance insights.
+              </Typography>
+            </Box>
+          </Grid>
+        </Grid>
 
         <Grid container spacing={3} sx={{ mb: 8 }}>
           <Grid item xs={12} md={6}>

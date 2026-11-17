@@ -1,5 +1,5 @@
-import { lazy, Suspense } from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { lazy, Suspense, useEffect } from 'react';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import { ThemeProvider, CssBaseline } from '@mui/material';
 import theme from './theme/theme';
 import './styles/index.css';
@@ -13,10 +13,23 @@ const ServicesPage = lazy(() => import('./pages/Home'));
 const Blog = lazy(() => import('./pages/Blog'));
 const ContactSection = lazy(() => import('./components/FlameEffect'));
 
+function ScrollToTop() {
+  const { pathname, hash } = useLocation();
+
+  useEffect(() => {
+    if (!hash) {
+      window.scrollTo(0, 0);
+    }
+  }, [pathname, hash]);
+
+  return null;
+}
+
 export default function App() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
+      <ScrollToTop />
       <Header />
       <main>
         <Suspense fallback={<div role="status" style={{ minHeight: '50vh' }}>Loading page…</div>}>
